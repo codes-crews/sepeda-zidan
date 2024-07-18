@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">Sepeda Zidan</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bookingform.html">Booking</a>
+            <a href="about.html">About us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="formcontainer">
+            <h1 class="title">Sepeda Zidan</h1>
+            <img src="images/cars1.jpeg" alt="">
+
+            <form>
+                <label>Full name</label>
+                <input type="text">
+                <label>Email</label>
+                <input type="email">
+                <label>Phone Number</label>
+                <input type="number">
+                <label>Pick a Date</label>
+                <input type="date">
+                <label>Jumlah Pesanan?</label>
+                <input id="num-of-people" type="number">
+
+                <label>Tour Package</label>
+                <select name="package" id="package">
+                    <option value="3500">Sepeda Zidan 1 | $3500</option>
+                    <option value="2500">Sepeda Zidan 2 | $2500</option>
+                    <option value="9000">Sepeda Zidan 3 | $9000</option>
+                    <option value="4000">Sepeda Zidan 4 | $4000</option>
+                    <option value="9500">Sepeda Zidan 5 | $9500</option>
+                </select>
+                <h3>Total Harga Pesanan : Rp <span id="total"> </span></h3>
+                <!-- <h3>Total Ongkir : Rp 5.000 <span id="total"> </span></h3> -->
+                <button onclick="process()">Process Pesanan</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <h3>SEPEDA ZIDAN</h3>
+        <p>Copyright 2024 Design By SEPEDA ZIDAN</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
